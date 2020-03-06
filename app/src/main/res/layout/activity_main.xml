@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="50dp"
+    android:visibility="visible">
+
+    <EditText
+        android:id="@+id/etMain_cep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="0123456789"
+        android:hint="CEP"
+        android:inputType="number"
+        android:maxLength="8"
+        android:textColor="#595959"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnMain_buscarCep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="Buscar CEP"
+            android:textColor="#FDFDFD"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/etMain_resposta"
+        android:layout_width="312dp"
+        android:layout_height="300dp"
+        android:textColor="#595959"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="314dp"
+        android:layout_height="84dp"
+        android:background="#FFFFFF"
+        android:tint="#27429F"
+        android:visibility="visible"
+        app:srcCompat="@android:drawable/ic_dialog_map"
+        tools:srcCompat="@android:drawable/ic_dialog_map"
+        tools:visibility="visible" />
+
+</LinearLayout>
